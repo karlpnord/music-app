@@ -1,8 +1,13 @@
+import Callback from './pages/Callback';
+import Login from './pages/Login';
+import { Routes, Route } from 'react-router-dom';
+
 const App = () => {
   return (
-    <div>
-      App
-    </div>
+    <Routes>
+      <Route path='/' element={<Login /> } />
+      <Route path='/callback' element={<Callback />} />
+    </Routes>
   );
 };
 
