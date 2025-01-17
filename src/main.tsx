@@ -11,11 +11,11 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <SpotifyAuthProvider>
-        <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={queryClient}>
+        <SpotifyAuthProvider>
           <App />
-        </QueryClientProvider>
-      </SpotifyAuthProvider>
+        </SpotifyAuthProvider>
+      </QueryClientProvider>
     </BrowserRouter>
   </StrictMode>,
 );
