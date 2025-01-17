@@ -18,7 +18,7 @@ const Login = () => {
     });
   }, [color]);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(175% 175% at 50% 0%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(165% 165% at 50% 0%, #020617 50%, ${color})`;
   
   return (
     <motion.div

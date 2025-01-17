@@ -20,7 +20,7 @@ const GridOverlay = () => {
           key={index}
           className='border border-borderClr'
           style={{
-            opacity: 0.5,
+            opacity: 0.8,
           }}
         />
       ))}

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useSpotifyAuth } from '../hooks/useSpotifyAuth';
 
-const Callback = () => {
+const Dashboard = () => {
   const { clearToken } = useSpotifyAuth();
   
   return (
     <div>
-      Callback
+      Dashboard
       <Link to='/'>
         <button onClick={clearToken} className='border border-black p-2'>Logout</button>
       </Link>
@@ -14,4 +14,4 @@ const Callback = () => {
   );
 };
 
-export default Callback;
+export default Dashboard;
